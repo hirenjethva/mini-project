@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QOUTES</title>
+</head>
+<body>
+    <h1>Simple Quote Generator</h1> 
+    <div id="quoteDisplay"> 
+        <!--Qoutes will display here -->
+    </div>
+    <button onclick="newQuote()"> New Quote </button>
+    <script>
+        var quotes=['Its not the size of the dog in the fight, but the size of the fight in the dog. -Archie Griffen',
+            'Nothing lasts forever. Not even your troubles. -Arnold H Glasgow',
+            'There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle -Albert Einstein',
+            'Being strong means rejoicing in who you are, complete with imperfections.-Margaret Woodhouse',
+            'If you don’t go after what you want, you’ll never have it. If you don’t ask, the answer is always no. If you don’t step forward, you’re always in the same place. -Nora Roberts',
+            'The only place you find success before work is in the dictionary. -May V Smith']
+    
+        function newQuote() {
+        var randomnumber = Math.floor(Math.random() * (quotes.length)); 
+        document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber];
+        }
+    </script>
+    
+</body>
+</html>
